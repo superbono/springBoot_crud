@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:insert="/common/layouts/header.html" />
+    <div>
+        <h2>메인페이지</h2>
+    </div>
+    <div>
+        <a th:href="@{/member/regist}">회원가입</a>
+        <a th:href="@{/member/login}">로그인</a>
+        <a>로그아웃</a>
+    </div>
+    <div th:insert="/common/layouts/footer.html" />
+</body>
+</html>
